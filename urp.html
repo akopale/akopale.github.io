@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Amy Kopale</title>
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-default color-fill navbar-fixed-top">
+         <div class="col-md-12">
+            <div class="nav">
+               <button class="btn-nav">
+               <span class="icon-bar top"></span>
+               <span class="icon-bar middle"></span>
+               <span class="icon-bar bottom"></span>
+               </button>
+            </div>
+            <a class="navbar-brand" href="index.html">Home
+            </a>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="about.html">About Me</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="portfolio.html">Portfolio</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section id="portfolio">
+         <div class="container">
+           <div class="row">
+           <div class="col-md-12">
+              <h1 class = "text-center">
+                 Sexual Assault & Domestic Violence News Coverage in Chicago
+              </h1>
+              <h2 class ="text-center"> Spatial Patterns & Socioeconomic Correlates</h2>
+            </div>
+          </div>
+          <div class="row margin-top-45">
+            <div class="col-md-3">
+              <h2>Why?</h2>
+            </div>
+            <div class="col-md-9">
+              <p>
+                While violent crime in general is a well studied topic, sexual assault and domestic violence are often thrown into that category even though they are inherently different than other types of violent crimes. I plan to look at these specific type of violent crimes, exploring their spatial patterns and socioeconomic correlates.
+              </p>
+              <br>
+              <p>
+                I plan to also look at how news media coverage - primarily major Chicago-area print news outlets - varies by where the crime took place.
+                <p>
+            </div>
+          </div>
+          <div class="row margin-top-45">
+             <div class="col-md-3">
+                <h2>Background<h2>
+             </div>
+             <div class="col-md-9">
+                <p>
+                   VIOLENT CRIME
+                </p>
+                <p>
+                  -Rates have been decreasing significantly since the early 90s (1)
+                </p>
+                <p>
+                  -Economic and social disadvantage are strong correlates (2, 3, 4)
+                </p>
+                <p>
+                  -Perpetrator & victim are more likely to be male (1, 4)
+                </p>
+                <p>
+                  -Fatal injuries are more likely if the perpetrator is male (1, 4)
+                </p>
+                <br>
+                <p>
+                  DOMESTIC VIOLENCE & SEXUAL ASSAULT
+                </p>
+                <p>
+                  -Victims are more likely to be female (1)
+                </p>
+                <p>
+                  -Fatalities are more likely if the victim is female (1)
+                </p>
+             </div>
+          </div>
+          <br>
+
+            <div class="row margin-top-45">
+              <div class="col-md-3">
+                <h2>Data and Methods</h2>
+              </div>
+              <div class="col-md-9">
+                <p>
+                  This project includes data from the US Census Bureau (socioeconomic), Social Impact Research Center (socioeconomic), City of Chicago (crime), and the Chicago Justice Project (news coverage).
+                </p>
+                <br>
+                <p>
+                  Below is an interactive map showing different socioeconomic variables of interest.
+                </p>
+                <div class="col-md-3">
+                  <h2></h2>
+                </div>
+                    <div class="col-md-9">
+                      <p>
+                          <iframe width="100%" height="520" frameborder="0" src="https://akopale.carto.com/builder/df588bae-0bc1-4dbd-8209-1ea704b2a25f/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen alt="carto map" align="right"></iframe>
+                      </p>
+                    </div>
+                  </div>
+                    <div class="col-md-3">
+                      <h2></h2>
+                    </div>
+                    <p>
+                      Census data to neighborhoods: calculate everything as counts in excel > polygon to centroid > spatially join to neighborhood shapefile > sum counts > divide by population to calculate rates
+                    </p>
+                    <p>
+                      Crime & news data: spatially join point data to the newly-created shapefile > divide by population
+                    </p>
+                    <p>
+                      Spatial analysis: Global Moran's I, Anselin Local Moran's I
+                    </p>
+                    <p>
+                      Regression analysis: OLS in GeoDa, spatial lag or spatial error if necessary
+                    </p>
+                  </div>
+              </div>
+              <div class="row margin-top-45">
+                <div class="col-md-3">
+                  <h2>Crime Results</h2>
+                </div>
+                <div class="col-md-9">
+                  <p>
+                    Below is a series of maps showing the spatial results for the crime analysis. The first map shows the results of the Local Moran's I for both sexual assault and domestic violence rates by neighborhood.
+                    The second map shows sexual assault rates by neighborhood and the point location of those crimes. The third map shows domestic violence rates by neighborhood and the point location of those cases.
+                  </p>
+                <br>
+                    <div class="col-md-3">
+                      <h2></h2>
+                    </div>
+                        <div class="col-md-9">
+                          <p>
+                              <iframe width="100%" height="520" frameborder="0" src="https://akopale.carto.com/builder/a90845a3-e504-4b58-b827-2af29119c424/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen alt="carto map" align="right"></iframe>
+                          </p>
+                        </div>
+                  <br>
+                    <div class="col-md-3">
+                      <h2></h2>
+                    </div>
+                        <div class="col-md-9">
+                          <p>
+                            <iframe width="100%" height="520" frameborder="0" src="https://akopale.carto.com/builder/69196f9d-c474-43a6-a0d4-e8f78e9ea082/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen alt="carto map" align="right"></iframe>
+                          </p>
+                      </div>
+                  <br>
+                      <div class="col-md-3">
+                          <h2></h2>
+                        </div>
+                        <div class="col-md-9">
+                          <p>
+                            <iframe width="100%" height="520" frameborder="0" src="https://akopale.carto.com/builder/63dddf3e-8439-477b-bde0-009cb604916e/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen alt="carto map" align="right"></iframe>
+                          </p>
+                        </div>
+                  <br>
+                    <p>
+                      The following two tables show the results of the regression analysis for sexual assault and domestic violence.
+                  </p>
+                  <br>
+                    <div class="col-md-3">
+                        <h2></h2>
+                      </div>
+                      <div class="col-md-9">
+                        <p>
+                          <img src=img/SVrate.PNG>
+                        </div>
+                  <br>
+                  <div class="col-md-3">
+                      <h2></h2>
+                    </div>
+                    <div class="col-md-9">
+                      <p>
+                        <img src=img/DVrate.PNG>
+                      </div>
+            </div>
+          </div>
+
+          <div class="row margin-top-45">
+            <div class="col-md-3">
+              <h2>News Coverage Results</h2>
+            </div>
+                <div class="col-md-9">
+                    <p>
+                        The news coverage includes 330+ stories, with each story gecoded to the neighborhood where the crime the story focuses on took place.
+                        Below are the regression analysis comparing news coverage for sexual assault and domestic violence.
+                    </p>
+            <br>
+            <div class="col-md-3">
+                <h2></h2>
+              </div>
+              <div class="col-md-9">
+                <p>
+                  <img src=img/SAnews.PNG>
+                </div>
+          <br>
+          <div class="col-md-3">
+              <h2></h2>
+            </div>
+            <div class="col-md-9">
+              <p>
+                <img src=img/DVnews.PNG>
+              </div>
+        <br>
+          </div>
+        </div>
+
+
+        </section>
+        <!-- script -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/script.js"></script>
+     </body>
+  </html>
